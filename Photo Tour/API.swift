@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 struct URLS{
-    static let localBaseURL = "http://localhost:8080"
+    static let localBaseURL = "http://localhost:8889"
     static let baseURL = "http://188.166.36.161:8080"
     
     static let cities = baseURL + "/cities"
@@ -50,13 +50,14 @@ class API{
         
         let id = city.id
         
-        Alamofire.request(URLS.pois, method: .get, parameters: ["id": id]).responseJSON { response in
+        Alamofire.request(URLS.pois, method: .get, parameters: ["city_id": id]).responseJSON { response in
             if let jsonData = response.result.value {
                 let json = JSON(jsonData)
                 
                 //extract POIs
                 var pois = [POI]()
                 for poiJson in json.arrayValue{
+                    print(poiJson)
                     pois.append(POI(json: poiJson))
                 }
                 
@@ -70,11 +71,25 @@ class API{
     
     // POST /route
     
-    static func buildRoute(from poiIds: [String], completion: @escaping (String?)->Void){
-        Alamofire.request(URLS.pois, method: .post, parameters: ["id": poiIds]).responseJSON { response in
+    static func buildRoute(from poiIds: [String], completion: @escaping ([String]?)->Void){
+        
+        var ids = [[String:String]]()
+        ids = poiIds.flatMap{["pin_id": $0]}
+        
+        print(ids)
+        
+        Alamofire.request(URLS.route, method: .post, parameters: ["pins": ids], encoding: JSONEncoding.default).responseJSON { response in
+           
             if let jsonData = response.result.value {
                 let json = JSON(jsonData)
-                completion(json.string)
+                
+                var wkts = [String]()
+                
+                for legsJson in json["legs"].arrayValue{
+                    wkts.append(legsJson["leg"].stringValue)
+                }
+                
+                completion(wkts)
             } else {
                 completion(nil)
             }

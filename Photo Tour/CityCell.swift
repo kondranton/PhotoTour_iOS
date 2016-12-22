@@ -18,6 +18,7 @@ class CityCell: UITableViewCell {
             cityName.text = city.name
             if let url = city.photoUrl{
                 cityPhoto.sd_setImage(with: url)
+                cityPhoto.makeRound()
             }
         }
     }

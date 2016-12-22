@@ -14,7 +14,7 @@ import GEOSwift
 class POI{
     let id: String
     let name: String
-    let geometryWKT: String
+    let location: CLLocation
     var photos = [Photo]()
     
     var mainPhotoUrl: URL?{
@@ -25,19 +25,37 @@ class POI{
         }
     }
     
-    var geometry: Geometry?{
-        return Geometry.create(geometryWKT)
-    }
-    
     func show(on map:MGLMapView){
-        guard let shape = geometry?.mapboxShape() else { return }
-        map.addAnnotation(shape)
+        
+        var pointAnnotations = [MGLPointAnnotation]()
+        
+        let poiAnnotation = POIAnnotation()
+        poiAnnotation.coordinate = location.coordinate
+        poiAnnotation.title = name
+        poiAnnotation.poi = self
+        pointAnnotations.append(poiAnnotation)
+        
+        for photo in photos{
+            let photoAnnotation = PhotoAnnotation()
+            photoAnnotation.coordinate = photo.location.coordinate
+            photoAnnotation.title = name
+            photoAnnotation.photo = photo
+            pointAnnotations.append(photoAnnotation)
+        }
+        
+        map.addAnnotations(pointAnnotations)
     }
     
     init(json:JSON){
         id = json["id"].stringValue
         name = json["name"].stringValue
-        geometryWKT = json["geometry"].stringValue
+        
+        //location
+        let lat = json["location"]["latitude"].doubleValue
+        let long = json["location"]["longitude"].doubleValue
+        
+        location = CLLocation(latitude: lat, longitude: long)
+        
         for photoJson in json["photos"].arrayValue{
             photos.append(Photo(json: photoJson))
         }

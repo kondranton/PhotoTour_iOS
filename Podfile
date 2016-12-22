@@ -5,4 +5,5 @@ target 'Photo Tour' do
     pod 'SDWebImage'
     pod 'Alamofire'
     pod 'SwiftyJSON'
+    pod 'SwiftSpinner'
 end

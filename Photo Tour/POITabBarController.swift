@@ -29,10 +29,17 @@ class POITabBarController: UITabBarController {
     
     func sharePois(){
         guard let pois = pois else { return }
-        guard let listController = viewControllers?.first as? ListPOIViewController else { return }
-        guard let mapController = viewControllers?.last as? MapPOIViewController else { return }
+        
+        guard let listNavigationController = viewControllers?.first as? UINavigationController else { return }
+        guard let mapNavigationController = viewControllers?.last as? UINavigationController else { return }
+        
+        guard let listController = listNavigationController.viewControllers.first as? ListPOIViewController else { return }
+        guard let mapController = mapNavigationController.viewControllers.first as? MapPOIViewController else { return }
         
         listController.pois = pois
+        listController.city = city
+        
         mapController.pois = pois
+        mapController.city = city
     }
 }

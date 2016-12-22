@@ -12,7 +12,6 @@ class CityViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     @IBOutlet weak var tableView: UITableView!
     
-    
     var cities = [City](){
         didSet{
             tableView.reloadData()
@@ -21,6 +20,9 @@ class CityViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.contentInset = UIEdgeInsets(top: 30, left: 0, bottom: 0, right: 0)
+        tableView.tableFooterView = UIView()
+        
         getCities()
     }
     
@@ -50,6 +52,10 @@ class CityViewController: UIViewController, UITableViewDataSource, UITableViewDe
     //MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        print(segue.destination as? POITabBarController)
+        print(sender as? CityCell)
+        
         if
             segue.identifier == "toCity",
             let destination = segue.destination as? POITabBarController,

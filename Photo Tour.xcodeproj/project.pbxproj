@@ -17,12 +17,17 @@
 		1B0D00DF1E098E9D007D1B9D /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0D00DE1E098E9D007D1B9D /* CityCell.swift */; };
 		1B0D00E11E099260007D1B9D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0D00E01E099260007D1B9D /* City.swift */; };
 		1B0D00E41E0995C6007D1B9D /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0D00E31E0995C6007D1B9D /* POI.swift */; };
+		1B138E701E0BF60100213838 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B138E6F1E0BF60100213838 /* Extensions.swift */; };
+		1B138E721E0C013300213838 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B138E711E0C013300213838 /* PhotoCell.swift */; };
+		1B8B0DE31E0C181900C4E9CD /* PhotoAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B0DE21E0C181900C4E9CD /* PhotoAnnotation.swift */; };
+		1B8B0DE51E0C1E4F00C4E9CD /* POIAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B0DE41E0C1E4F00C4E9CD /* POIAnnotation.swift */; };
 		1BA697611E099CDB008B0092 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA697601E099CDB008B0092 /* API.swift */; };
 		1BA697631E09A395008B0092 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA697621E09A395008B0092 /* Photo.swift */; };
 		1BA697651E09A558008B0092 /* ListPOIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA697641E09A558008B0092 /* ListPOIViewController.swift */; };
 		1BA697671E09A770008B0092 /* POICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA697661E09A76F008B0092 /* POICell.swift */; };
 		1BA697691E09B0F7008B0092 /* POITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA697681E09B0F7008B0092 /* POITabBarController.swift */; };
 		1BA6976B1E09B225008B0092 /* MapPOIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA6976A1E09B225008B0092 /* MapPOIViewController.swift */; };
+		1BEBCC4A1E0C4B8C005837E1 /* RouteMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEBCC491E0C4B8C005837E1 /* RouteMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,12 +54,17 @@
 		1B0D00DE1E098E9D007D1B9D /* CityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		1B0D00E01E099260007D1B9D /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		1B0D00E31E0995C6007D1B9D /* POI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POI.swift; sourceTree = "<group>"; };
+		1B138E6F1E0BF60100213838 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1B138E711E0C013300213838 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		1B8B0DE21E0C181900C4E9CD /* PhotoAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAnnotation.swift; sourceTree = "<group>"; };
+		1B8B0DE41E0C1E4F00C4E9CD /* POIAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POIAnnotation.swift; sourceTree = "<group>"; };
 		1BA697601E099CDB008B0092 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		1BA697621E09A395008B0092 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		1BA697641E09A558008B0092 /* ListPOIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPOIViewController.swift; sourceTree = "<group>"; };
 		1BA697661E09A76F008B0092 /* POICell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POICell.swift; sourceTree = "<group>"; };
 		1BA697681E09B0F7008B0092 /* POITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POITabBarController.swift; sourceTree = "<group>"; };
 		1BA6976A1E09B225008B0092 /* MapPOIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPOIViewController.swift; sourceTree = "<group>"; };
+		1BEBCC491E0C4B8C005837E1 /* RouteMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteMapViewController.swift; sourceTree = "<group>"; };
 		5A385089F4B16F3DE29F6037 /* Pods-Photo Tour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photo Tour.release.xcconfig"; path = "Pods/Target Support Files/Pods-Photo Tour/Pods-Photo Tour.release.xcconfig"; sourceTree = "<group>"; };
 		A0FF4B771BD49287650AA46C /* Pods_Photo_Tour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Photo_Tour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0760218C08C18817DCC3EC8 /* Pods-Photo Tour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photo Tour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Photo Tour/Pods-Photo Tour.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +117,7 @@
 				1B0D00E21E0995BA007D1B9D /* Model */,
 				1B0D00BE1E098DC1007D1B9D /* AppDelegate.swift */,
 				1BA697601E099CDB008B0092 /* API.swift */,
+				1B138E6F1E0BF60100213838 /* Extensions.swift */,
 				1B0D00C21E098DC1007D1B9D /* Main.storyboard */,
 				1B0D00C51E098DC1007D1B9D /* Assets.xcassets */,
 				1B0D00C71E098DC1007D1B9D /* LaunchScreen.storyboard */,
@@ -139,6 +150,9 @@
 			children = (
 				1B0D00DE1E098E9D007D1B9D /* CityCell.swift */,
 				1BA697661E09A76F008B0092 /* POICell.swift */,
+				1B138E711E0C013300213838 /* PhotoCell.swift */,
+				1B8B0DE21E0C181900C4E9CD /* PhotoAnnotation.swift */,
+				1B8B0DE41E0C1E4F00C4E9CD /* POIAnnotation.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -150,6 +164,7 @@
 				1BA697641E09A558008B0092 /* ListPOIViewController.swift */,
 				1BA6976A1E09B225008B0092 /* MapPOIViewController.swift */,
 				1BA697681E09B0F7008B0092 /* POITabBarController.swift */,
+				1BEBCC491E0C4B8C005837E1 /* RouteMapViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -330,12 +345,17 @@
 				1BA697631E09A395008B0092 /* Photo.swift in Sources */,
 				1BA697651E09A558008B0092 /* ListPOIViewController.swift in Sources */,
 				1B0D00E41E0995C6007D1B9D /* POI.swift in Sources */,
+				1BEBCC4A1E0C4B8C005837E1 /* RouteMapViewController.swift in Sources */,
 				1B0D00C11E098DC1007D1B9D /* CityViewController.swift in Sources */,
 				1B0D00BF1E098DC1007D1B9D /* AppDelegate.swift in Sources */,
 				1B0D00E11E099260007D1B9D /* City.swift in Sources */,
+				1B138E721E0C013300213838 /* PhotoCell.swift in Sources */,
 				1BA697611E099CDB008B0092 /* API.swift in Sources */,
+				1B8B0DE51E0C1E4F00C4E9CD /* POIAnnotation.swift in Sources */,
+				1B138E701E0BF60100213838 /* Extensions.swift in Sources */,
 				1BA6976B1E09B225008B0092 /* MapPOIViewController.swift in Sources */,
 				1B0D00DF1E098E9D007D1B9D /* CityCell.swift in Sources */,
+				1B8B0DE31E0C181900C4E9CD /* PhotoAnnotation.swift in Sources */,
 				1BA697691E09B0F7008B0092 /* POITabBarController.swift in Sources */,
 				1BA697671E09A770008B0092 /* POICell.swift in Sources */,
 			);

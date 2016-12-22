@@ -10,6 +10,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - SwiftSpinner (1.1.0)
   - SwiftyJSON (3.1.3)
 
 DEPENDENCIES:
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - GEOSwift/MapboxGL
   - Mapbox-iOS-SDK
   - SDWebImage
+  - SwiftSpinner
   - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -25,8 +27,9 @@ SPEC CHECKSUMS:
   GEOSwift: 7a3e070ee189ea27d3bcb6ba5244bf69d4f953aa
   Mapbox-iOS-SDK: 142301fa63a6719cbd2eacc0f9e8bf36c65930d9
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SwiftSpinner: c03815614599b91eea46594bd52ba742849d0414
   SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
 
-PODFILE CHECKSUM: b7721bcff85b04281c625933e582366dcc658bea
+PODFILE CHECKSUM: 8e514168af077b471e9758cbf4df4ff8836349ca
 
 COCOAPODS: 1.0.1

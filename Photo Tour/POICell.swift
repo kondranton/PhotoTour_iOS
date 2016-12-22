@@ -19,6 +19,7 @@ class POICell: UITableViewCell {
             poiName.text = poi.name
             if let url = poi.mainPhotoUrl{
                 poiImage.sd_setImage(with: url)
+                poiImage.makeRound()
             }
         }
     }
